@@ -1,0 +1,140 @@
+/* style.css */
+
+/* Body and page setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6851b, #e2761b, #c6551a);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header with logo and title */
+header {
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #f6851b, #e2761b);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* Title styling */
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* Main container for buttons and inputs */
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Buttons style */
+button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f6851b;
+  color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(246, 133, 27, 0.6);
+}
+
+button:hover {
+  background-color: #e2761b;
+  box-shadow: 0 6px 15px rgba(226, 118, 27, 0.8);
+}
+
+/* Input style */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Status text style */
+#status {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  min-height: 1.5em;  /* To keep space even if empty */
+}
+/* main container ke neeche thoda extra space */
+main {
+  margin-top: 50px;
+  margin-bottom: 1000px;    /* Yahan bottom space badha diya */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Status text styling with box */
+#status {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  min-height: 1.5em;
+  padding: 8px 15px;
+
+  border-radius: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Status jab connected ho to green background aur white text */
+#status.connected {
+  background-color: #28a745; /* green */
+  color: white;
+  box-shadow: 0 0 10px #28a745;
+}
+
+select#category {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #c6551a;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(246, 133, 27, 0.6);}

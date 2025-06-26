@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Anum Tariq\\Desktop\\university\\crowdfunding-dapp\\crowdfunding-dapp\\contracts\\Crowdfunding.sol": {
+      "lastModificationDate": 1750916246990,
+      "contentHash": "701de38380c0b1663354fd1c98b89918",
+      "sourceName": "contracts/Crowdfunding.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Crowdfunding"
+      ]
+    }
+  }
+}

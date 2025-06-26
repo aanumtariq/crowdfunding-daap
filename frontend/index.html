@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crowdfunding DApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Crowdfunding DApp</h1>
+  </header>
+
+  <main>
+    <!-- Connect Wallet Button -->
+    <button id="connect">Connect Wallet</button>
+    <p id="status">Not connected</p>
+
+    <!-- Contribution Amount -->
+    <input id="amount" placeholder="Amount in ETH" type="number" min="0" step="0.01" />
+
+    <!-- Category Dropdown -->
+    <select id="category">
+      <option disabled selected>Select Category</option>
+      <option value="education">Education</option>
+      <option value="lifestyle">Lifestyle</option>
+      <option value="homeless">Homeless</option>
+      <option value="aged">Aged People</option>
+    </select>
+
+    <!-- Action Buttons -->
+    <button id="contribute">Contribute</button>
+    <button id="withdraw" style="display: none;">Withdraw</button>
+    <button id="refund" style="display: none;">Request Refund</button>
+
+    <!-- Status Info -->
+    <div id="campaignInfo">
+      <p id="goalStatus"></p>
+      <p id="raisedStatus"></p>
+      <p id="deadlineStatus"></p>
+      <p id="userContribution"></p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.4/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
